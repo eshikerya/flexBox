@@ -260,6 +260,7 @@ export const FlexBox = (props: FlexBoxPropsType & InternalPropsType) => {
     const Comp = as || 'div';
     return (
         <Comp className={computed} style={{ ...flexStyles, ...style }} onClick={onClick}>
+            {/* // $FlowFixme */}
             {children}
         </Comp>
     );
